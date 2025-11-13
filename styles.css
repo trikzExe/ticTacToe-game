@@ -1,0 +1,181 @@
+:root {
+  --bg-100: hsl(152, 11%, 5%);
+  --bg-200: hsl(152, 11%, 10%);
+  --bg-300: hsl(152, 11%, 15%);
+  --bg-400: hsl(152, 11%, 20%);
+  --text-900: hsl(152, 11%, 95%);
+  --text-800: hsl(152, 11%, 85%);
+  --border-100: hsl(152, 11%, 35%);
+  --border-200: hsl(152, 11%, 45%);
+  --border-300: hsl(152, 11%, 55%);
+  --primary: hsl(152, 41%, 50%);
+  --secondary: hsl(332, 41%, 35%);
+  --danger: hsl(0, 11%, 50%);
+  --warning: hsl(25, 11%, 50%);
+  --success: hsl(120, 11%, 50%);
+  --info: hsl(80, 11%, 50%);
+  --ff: "Roboto", sans-serif;
+  --h1: 800 1.5rem var(--ff);
+  --h2: 600 1.25rem var(--ff);
+  --p: 400 1rem var(--ff);
+}
+
+body {
+  background-color: var(--bg-100);
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+header {
+  text-align: center;
+  background-color: var(--bg-200);
+  padding: 5rem;
+  margin: 0;
+  box-sizing: border-box;
+  box-shadow: 0 10px 16px var(--border-100);
+}
+
+h1 {
+  font: var(--h1);
+  color: var(--text-900);
+}
+
+p {
+  font: var(--p);
+  color: var(--text-800);
+}
+
+#player-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.player-cards {
+  width: fit-content;
+  text-align: center;
+  background-color: var(--bg-200);
+  padding: 1rem 3rem;
+  border-radius: 15px;
+  border: solid 1px var(--border-100);
+  border-top: solid 1px var(--border-200);
+  box-shadow: 0 4px 6px var(--bg-300);
+}
+
+h2 {
+  color: var(--text-900);
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--p);
+  color: var(--text-800);
+}
+
+.edit {
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  color: var(--text-800);
+  font: var(--p);
+  cursor: pointer;
+}
+
+#new-game {
+  background-color: var(--danger);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 6px var(--bg-300);
+}
+
+#new-game-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#win-container {
+    text-align: center;
+    background-color: var(--bg-200);
+    padding: 2rem 5rem;
+    width: fit-content;
+    margin: 2rem auto;
+    border-radius: 15px;
+    border: solid 1px var(--border-100);
+    border-top-color: var(--border-200);
+    box-shadow: 0 6px 10px var(--bg-300);
+}
+
+#game-container {
+    text-align: center;
+}
+
+#pallete {
+    display: grid; 
+    grid-template-columns: repeat(3, 5rem);
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#pallete button {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    background-color: var(--bg-200);
+    color: var(--text-900);
+    font-size: xx-large;
+    border: none;
+    transition: 0.2s ease-out;
+}
+
+#pallete button:hover {
+    background-color: var(--bg-300);
+}
+
+#pallete button:active {
+    background-color: var(--bg-400);
+}
+
+aside {
+    display: none;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 0%, 0.5);
+}
+
+#aside-container {
+    width: fit-content;
+    background-color: var(--bg-300);
+    margin: 10rem auto;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+#aside-container input {
+    background-color: var(--bg-400);
+    border: none;
+    outline: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    color: var(--text-800);
+    font: var(p);
+    margin-bottom: 1rem;
+}
+
+#aside-container button {
+    width: 5rem;
+    height: 2rem;
+    background-color: var(--bg-400);
+    color: var(--text-900);
+    font: var(--p);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
