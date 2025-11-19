@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
     <title>tic-tac-toe game</title>
   </head>
   <body>
@@ -42,29 +43,31 @@
         </div>
       </section>
       <section id="game-container">
-        <p>Its your turn, <span></span></p>
+        <p>Its your turn, <span id="player-turn"></span></p>
         <div id="pallete">
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <button data-column="0" data-row="0"></button>
+          <button data-column="1" data-row="0"></button>
+          <button data-column="2" data-row="0"></button>
+          <button data-column="0" data-row="1"></button>
+          <button data-column="1" data-row="1"></button>
+          <button data-column="2" data-row="1"></button>
+          <button data-column="0" data-row="2"></button>
+          <button data-column="1" data-row="2"></button>
+          <button data-column="2" data-row="2"></button>
         </div>
       </section>
     </main>
     <aside>
       <div id="aside-container">
-        <h2>Choose your name</h2>
-        <p>Player name</p>
-        <input type="text" name="player-name" id="player-name" />
-        <div>
-          <button type="button">cancel</button>
-          <button type="submit">sumbit!</button>
-        </div>
+        <form>
+          <h2>Choose your name</h2>
+          <p>Player name</p>
+          <input type="text" name="player-name" id="player-name" maxlength="10"/>
+          <div>
+            <button type="button" id="cancel">cancel</button>
+            <button type="submit">sumbit!</button>
+          </div>
+        </form>
       </div>
     </aside>
   </body>
