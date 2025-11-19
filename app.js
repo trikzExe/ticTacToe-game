@@ -53,7 +53,7 @@ function asideCloser() {
 function sumbitTheName(event) {
   event.preventDefault();
   const formData = new FormData(event.target);
-  const enteredName = formData.get("player-name");
+  const enteredName = formData.get("player-name").trim();
   if (enteredName) {
     playerCards[whitchButton].children[1].textContent = enteredName;
     namesList[whitchButton].name = enteredName;
