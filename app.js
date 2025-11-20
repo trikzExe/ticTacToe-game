@@ -3,7 +3,6 @@ const overlay = document.querySelector("aside");
 const cancelButton = document.getElementById("cancel");
 const formElement = document.querySelector("form");
 const playerCards = document.querySelectorAll(".player-cards");
-const palleteElement = document.getElementById("pallete");
 const palletes = document.querySelectorAll("#pallete button");
 const playerCardsContainer = document.getElementById("player-cards-container");
 
